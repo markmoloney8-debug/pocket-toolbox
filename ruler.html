@@ -15,20 +15,30 @@
 <main class="wrap"><div class="page-head"><h1>On-screen ruler</h1><p>Measure small things like screws, buttons and hinges. Set it to actual size once with a bank card.</p></div><div class="tools">
   <article class="panel wide" aria-label="On-screen ruler">
     <div class="row" style="justify-content:space-between">
-      <span class="label">Hold the item against the screen</span>
+      <button class="btn primary" id="fullBtn">Open full-screen ruler</button>
       <div class="seg" role="group" aria-label="Ruler units">
         <button id="uCm" aria-pressed="true">cm</button><button id="uIn" aria-pressed="false">inches</button>
       </div>
     </div>
+    <p class="note">On a phone, use the full-screen ruler. It runs along the longest edge of your screen, so it's just as long whether you hold the phone upright or sideways.</p>
     <div class="ruler-box"><svg id="ruler" role="img" aria-label="Ruler scale"></svg></div>
     <div class="calib">
       <span class="label">Set up with a bank card</span>
-      <p class="note">Every screen is a different size. Hold any bank or loyalty card against the screen and drag the slider until the dashed box matches the card's width. You only need to do this once on each device.</p>
-      <div class="card-outline" id="cardOutline">Bank card size</div>
-      <input type="range" id="calibSlider" min="2" max="8" step="0.01" aria-label="Match card width">
+      <p class="note">Every screen is a different size, so do this once on each device. Hold a bank or loyalty card upright against the screen, with its left edge lined up with the left edge of your screen. Adjust until the box is exactly as wide as the card's short edge.</p>
+      <div class="card-strip"><div class="card-outline" id="cardOutline">Card's short edge</div></div>
+      <div class="calib-controls">
+        <button class="btn" id="calibMinus" aria-label="Make the box narrower">−</button>
+        <input type="range" id="calibSlider" min="2.5" max="8" step="0.01" aria-label="Match the card's short edge">
+        <button class="btn" id="calibPlus" aria-label="Make the box wider">+</button>
+      </div>
       <p class="note" id="calibNote"></p>
     </div>
   </article>
+</div>
+<div class="fullruler" id="fullRuler" hidden role="dialog" aria-modal="true" aria-label="Full-screen ruler">
+  <svg id="fullSvg" role="img" aria-label="Full-screen ruler scale"></svg>
+  <p class="full-tip">Line the end of the item up with 0</p>
+  <button class="btn primary full-close" id="closeFull">Close</button>
 </div>
 <section aria-labelledby="more-h"><h2 id="more-h" style="font-size:1.5rem">More tools</h2><nav class="more"><a href="level.html">Spirit level</a><a href="converter.html">Unit converter</a><a href="paint.html">Paint calculator</a><a href="tiles.html">Tile calculator</a><a href="wall-plugs.html">Wall plug picker</a></nav></section><footer><span>Pocket Toolbox · Free tools for quick DIY jobs at home.</span><span>Measurements and quantities are guides. Check product instructions, and use a qualified tradesperson if you're unsure.</span></footer></main>
 <script src="assets/common.js"></script>
