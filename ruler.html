@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Online Ruler – Actual Size On-Screen Ruler in cm and Inches | Pocket Toolbox</title>
+<meta name="description" content="A free on-screen ruler you set to actual size with a bank card. Measure screws, hinges and small parts in cm or inches.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f1bf2a'/%3E%3Cpath d='M6 8v8M11 8v5M16 8v8M21 8v5M26 8v8' stroke='%231b1a12' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="tape"><div class="tape-ticks" aria-hidden="true"></div><div class="bar"><a class="brand" href="index.html">Pocket Toolbox</a><a class="back" href="index.html">← All tools</a></div></header>
+<main class="wrap"><div class="page-head"><h1>On-screen ruler</h1><p>Measure small things like screws, buttons and hinges. Set it to actual size once with a bank card.</p></div><div class="tools">
+  <article class="panel wide" aria-label="On-screen ruler">
+    <div class="row" style="justify-content:space-between">
+      <span class="label">Hold the item against the screen</span>
+      <div class="seg" role="group" aria-label="Ruler units">
+        <button id="uCm" aria-pressed="true">cm</button><button id="uIn" aria-pressed="false">inches</button>
+      </div>
+    </div>
+    <div class="ruler-box"><svg id="ruler" role="img" aria-label="Ruler scale"></svg></div>
+    <div class="calib">
+      <span class="label">Set up with a bank card</span>
+      <p class="note">Every screen is a different size. Hold any bank or loyalty card against the screen and drag the slider until the dashed box matches the card's width. You only need to do this once on each device.</p>
+      <div class="card-outline" id="cardOutline">Bank card size</div>
+      <input type="range" id="calibSlider" min="2" max="8" step="0.01" aria-label="Match card width">
+      <p class="note" id="calibNote"></p>
+    </div>
+  </article>
+</div>
+<section aria-labelledby="more-h"><h2 id="more-h" style="font-size:1.5rem">More tools</h2><nav class="more"><a href="level.html">Spirit level</a><a href="converter.html">Unit converter</a><a href="paint.html">Paint calculator</a><a href="tiles.html">Tile calculator</a><a href="wall-plugs.html">Wall plug picker</a></nav></section><footer><span>Pocket Toolbox · Free tools for quick DIY jobs at home.</span><span>Measurements and quantities are guides. Check product instructions, and use a qualified tradesperson if you're unsure.</span></footer></main>
+<script src="assets/common.js"></script>
+<script src="assets/ruler.js"></script>
+</body>
+</html>

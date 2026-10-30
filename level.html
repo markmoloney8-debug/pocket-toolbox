@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Spirit Level App for Your Phone – Free Online Bubble Level | Pocket Toolbox</title>
+<meta name="description" content="A free spirit level that uses your phone&#x27;s motion sensor. Check shelves, pictures and worktops are level, with no app to install.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f1bf2a'/%3E%3Cpath d='M6 8v8M11 8v5M16 8v8M21 8v5M26 8v8' stroke='%231b1a12' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="tape"><div class="tape-ticks" aria-hidden="true"></div><div class="bar"><a class="brand" href="index.html">Pocket Toolbox</a><a class="back" href="index.html">← All tools</a></div></header>
+<main class="wrap"><div class="page-head"><h1>Spirit level</h1><p>Check shelves, pictures and worktops are level using your phone's motion sensor. No app to install.</p></div><div class="tools">
+  <article class="panel" aria-label="Spirit level">
+    <div class="level-stage">
+      <div class="bullseye" id="bullseye"><div class="bubble" id="bubble"></div></div>
+      <div class="level-read">
+        <div><span class="label">Side to side</span><span class="readout" id="degX">0.0°</span></div>
+        <div><span class="label">Front to back</span><span class="readout" id="degY">0.0°</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn primary" id="startLevel">Start level</button>
+      <button class="btn" id="zeroLevel">Set as zero</button>
+    </div>
+    <p class="note" id="levelNote">Uses your phone's motion sensor. Nothing is recorded or sent anywhere.</p>
+    <div class="demo" id="demo" hidden>
+      <span class="label">Try it here</span>
+      <label for="demoX">Tilt X <input type="range" id="demoX" min="-15" max="15" step="0.1" value="2.4"></label>
+      <label for="demoY">Tilt Y <input type="range" id="demoY" min="-15" max="15" step="0.1" value="-1.2"></label>
+    </div>
+  </article>
+  <article class="panel" aria-labelledby="lv-how">
+    <h2 id="lv-how" style="font-size:1.4rem">How to use it</h2>
+    <ol class="steps">
+      <li>Tap <b>Start level</b>. On an iPhone, choose <b>Allow</b> when it asks about motion.</li>
+      <li>Lay the phone flat on the surface, or hold its long edge against a shelf or picture frame.</li>
+      <li>Adjust until the bubble sits in the middle ring and turns green. That's within half a degree.</li>
+    </ol>
+    <p class="note">Take a bulky case off first. A case or camera bump can tilt the phone by a degree or more. If your phone reads slightly off on a surface you know is level, tap <b>Set as zero</b> there.</p>
+  </article>
+</div>
+<section aria-labelledby="more-h"><h2 id="more-h" style="font-size:1.5rem">More tools</h2><nav class="more"><a href="ruler.html">On-screen ruler</a><a href="converter.html">Unit converter</a><a href="paint.html">Paint calculator</a><a href="tiles.html">Tile calculator</a><a href="wall-plugs.html">Wall plug picker</a></nav></section><footer><span>Pocket Toolbox · Free tools for quick DIY jobs at home.</span><span>Measurements and quantities are guides. Check product instructions, and use a qualified tradesperson if you're unsure.</span></footer></main>
+<script src="assets/common.js"></script>
+<script src="assets/level.js"></script>
+</body>
+</html>

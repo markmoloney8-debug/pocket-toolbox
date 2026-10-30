@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Length Converter – mm, cm, m, Inches and Feet | Pocket Toolbox</title>
+<meta name="description" content="Convert any length between millimetres, centimetres, metres, inches, feet and yards at once, including feet and inches.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f1bf2a'/%3E%3Cpath d='M6 8v8M11 8v5M16 8v8M21 8v5M26 8v8' stroke='%231b1a12' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="tape"><div class="tape-ticks" aria-hidden="true"></div><div class="bar"><a class="brand" href="index.html">Pocket Toolbox</a><a class="back" href="index.html">← All tools</a></div></header>
+<main class="wrap"><div class="page-head"><h1>Unit converter</h1><p>Type a measurement in any unit to see it in all the others, including feet and inches.</p></div><div class="tools">
+  <article class="panel" aria-label="Unit converter">
+    <div class="conv">
+      <label class="label" for="convVal" style="grid-column:1/-1">Measurement</label>
+      <input id="convVal" type="number" inputmode="decimal" value="72" step="any">
+      <select id="convUnit" aria-label="Unit">
+        <option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option>
+        <option value="in" selected>inches</option><option value="ft">feet</option><option value="yd">yards</option>
+      </select>
+    </div>
+    <div class="results" id="convOut"></div>
+  </article>
+  <article class="panel" aria-labelledby="cv-h">
+    <h2 id="cv-h" style="font-size:1.4rem">Handy to know</h2>
+    <div class="prose">
+      <p>1 inch is exactly 25.4 mm, and 1 foot is 304.8 mm.</p>
+      <p>UK timber and sheet materials are sold in metric, but many sizes are old imperial ones rounded: a 2.4 m length was 8 feet, and a 1220 × 2440 mm sheet was 4 × 8 feet.</p>
+      <p>Plasterboard studs are usually 400 or 600 mm apart, close to the old 16 and 24 inches.</p>
+    </div>
+  </article>
+</div>
+<section aria-labelledby="more-h"><h2 id="more-h" style="font-size:1.5rem">More tools</h2><nav class="more"><a href="level.html">Spirit level</a><a href="ruler.html">On-screen ruler</a><a href="paint.html">Paint calculator</a><a href="tiles.html">Tile calculator</a><a href="wall-plugs.html">Wall plug picker</a></nav></section><footer><span>Pocket Toolbox · Free tools for quick DIY jobs at home.</span><span>Measurements and quantities are guides. Check product instructions, and use a qualified tradesperson if you're unsure.</span></footer></main>
+<script src="assets/common.js"></script>
+<script src="assets/converter.js"></script>
+</body>
+</html>

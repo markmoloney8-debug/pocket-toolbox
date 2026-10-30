@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Paint Calculator – How Much Paint Do I Need? | Pocket Toolbox</title>
+<meta name="description" content="Work out how much paint you need for a room&#x27;s walls or ceiling, allowing for doors, windows and coats, with the best mix of tin sizes to buy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f1bf2a'/%3E%3Cpath d='M6 8v8M11 8v5M16 8v8M21 8v5M26 8v8' stroke='%231b1a12' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="tape"><div class="tape-ticks" aria-hidden="true"></div><div class="bar"><a class="brand" href="index.html">Pocket Toolbox</a><a class="back" href="index.html">← All tools</a></div></header>
+<main class="wrap"><div class="page-head"><h1>Paint calculator</h1><p>Enter your room to see how much paint to buy, allowing for doors, windows and coats, with the best mix of tin sizes.</p></div><div class="tools">
+  <article class="panel wide" id="room" aria-labelledby="room-h"></article>
+  <article class="panel" aria-labelledby="paint-h">
+    <h2 id="paint-h" style="font-size:1.4rem">Paint</h2>
+    <div class="seg" role="group" aria-label="What are you painting">
+      <button data-paint="walls" aria-pressed="true">Walls</button><button data-paint="ceiling" aria-pressed="false">Ceiling</button><button data-paint="both" aria-pressed="false">Both</button>
+    </div>
+    <div class="fields">
+      <label class="field"><span class="label">Coats</span><input id="pCoats" type="number" inputmode="numeric" step="1" min="1" value="2"></label>
+      <label class="field"><span class="label">Coverage (m² per litre)</span><input id="pCover" type="number" inputmode="decimal" step="0.5" min="1" value="12"></label>
+    </div>
+    <label class="check"><input type="checkbox" id="pMist"> Bare new plaster (adds a watered-down mist coat)</label>
+    <div class="answer" aria-live="polite">
+      <span class="label">You need about</span>
+      <span class="big" id="pLitres">–</span>
+      <span id="pTins"></span>
+    </div>
+  </article>
+  <article class="panel" aria-labelledby="pt-h">
+    <h2 id="pt-h" style="font-size:1.4rem">Tips</h2>
+    <div class="prose">
+      <p>Check the coverage on the tin. Most emulsions cover 10 to 13 m² per litre, and cheaper paints often cover less.</p>
+      <p>Changing from a dark colour to a light one, or the other way, may need a third coat.</p>
+      <p>New plaster soaks up paint. Thin the first coat with about 10–20% water, or as the tin says, then do your normal coats.</p>
+      <p>Buy everything for one room at once so the colour matches. Batches can vary slightly.</p>
+    </div>
+  </article>
+</div>
+<section aria-labelledby="more-h"><h2 id="more-h" style="font-size:1.5rem">More tools</h2><nav class="more"><a href="level.html">Spirit level</a><a href="ruler.html">On-screen ruler</a><a href="converter.html">Unit converter</a><a href="tiles.html">Tile calculator</a><a href="wall-plugs.html">Wall plug picker</a></nav></section><footer><span>Pocket Toolbox · Free tools for quick DIY jobs at home.</span><span>Measurements and quantities are guides. Check product instructions, and use a qualified tradesperson if you're unsure.</span></footer></main>
+<script src="assets/common.js"></script>
+<script src="assets/paint.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tile Calculator – How Many Tiles Do I Need? | Pocket Toolbox</title>
+<meta name="description" content="Work out how many tiles and boxes you need for a floor or wall, plus adhesive, grout, spacers and where to start so your cuts are even.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f1bf2a'/%3E%3Cpath d='M6 8v8M11 8v5M16 8v8M21 8v5M26 8v8' stroke='%231b1a12' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="tape"><div class="tape-ticks" aria-hidden="true"></div><div class="bar"><a class="brand" href="index.html">Pocket Toolbox</a><a class="back" href="index.html">← All tools</a></div></header>
+<main class="wrap"><div class="page-head"><h1>Tile calculator</h1><p>Work out tiles and boxes for a floor or wall, plus adhesive, grout and spacers, and where to start so the cuts are even.</p></div><div class="tools">
+  <article class="panel wide" id="room" aria-labelledby="room-h"></article>
+  <article class="panel wide" aria-labelledby="tiles-h">
+    <h2 id="tiles-h" style="font-size:1.4rem">Tiles</h2>
+    <div class="seg" role="group" aria-label="Where are you tiling">
+      <button data-tarea="floor" aria-pressed="true">Floor</button><button data-tarea="walls" aria-pressed="false">All walls</button><button data-tarea="custom" aria-pressed="false">Custom area</button>
+    </div>
+    <div class="fields" id="tCustom" hidden>
+      <label class="field"><span class="label">Area width (m)</span><input id="tCW" type="number" inputmode="decimal" step="0.01" min="0" value="2.4"></label>
+      <label class="field"><span class="label">Area height (m)</span><input id="tCH" type="number" inputmode="decimal" step="0.01" min="0" value="0.6"></label>
+    </div>
+    <div class="fields">
+      <label class="field"><span class="label">Tile width (mm)</span><input id="tW" type="number" inputmode="numeric" step="1" min="10" value="600"></label>
+      <label class="field"><span class="label">Tile height (mm)</span><input id="tH" type="number" inputmode="numeric" step="1" min="10" value="300"></label>
+      <label class="field"><span class="label">Grout gap (mm)</span><input id="tGap" type="number" inputmode="decimal" step="0.5" min="0" value="3"></label>
+      <label class="field"><span class="label">Tile thickness (mm)</span><input id="tThk" type="number" inputmode="decimal" step="0.5" min="1" value="9"></label>
+      <label class="field"><span class="label">Layout</span>
+        <select id="tLayout">
+          <option value="straight">Straight grid</option><option value="brick">Brick (offset)</option><option value="diagonal">Diagonal</option><option value="herringbone">Herringbone</option>
+        </select></label>
+      <label class="field"><span class="label">Tiles per box</span><input id="tBox" type="number" inputmode="numeric" step="1" min="1" value="6"></label>
+    </div>
+    <div class="summary" aria-live="polite">
+      <div><span class="label">Area</span><span class="big" id="tArea">–</span></div>
+      <div><span class="label">Tiles</span><span class="big" id="tCount">–</span></div>
+      <div><span class="label">Boxes</span><span class="big" id="tBoxes">–</span></div>
+      <div><span class="label">Adhesive</span><span class="big" id="tAdh">–</span></div>
+      <div><span class="label">Grout</span><span class="big" id="tGrout">–</span></div>
+      <div><span class="label">Spacers</span><span class="big" id="tSpacers">–</span></div>
+    </div>
+    <p class="note" id="tWasteNote"></p>
+    <p class="start-tip" id="tStart"></p>
+  </article>
+</div>
+<section aria-labelledby="more-h"><h2 id="more-h" style="font-size:1.5rem">More tools</h2><nav class="more"><a href="level.html">Spirit level</a><a href="ruler.html">On-screen ruler</a><a href="converter.html">Unit converter</a><a href="paint.html">Paint calculator</a><a href="wall-plugs.html">Wall plug picker</a></nav></section><footer><span>Pocket Toolbox · Free tools for quick DIY jobs at home.</span><span>Measurements and quantities are guides. Check product instructions, and use a qualified tradesperson if you're unsure.</span></footer></main>
+<script src="assets/common.js"></script>
+<script src="assets/tiles.js"></script>
+</body>
+</html>
